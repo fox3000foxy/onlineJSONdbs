@@ -1,0 +1,30 @@
+Help of onlineJsonDB:
+	/create : Create JSON database
+	  db	REQUIRED
+	  pass  REQUIRED
+	/delete : Delete database <db>
+	  db	REQUIRED
+	  pass  REQUIRED
+	/get : Give database data
+	  db	REQUIRED
+	  max   (default=db.length)
+	/pushEntry : Add entry <data> to database <db>
+	  db	REQUIRED
+	  pass  REQUIRED
+	  data  REQUIRED
+	/setEntry : Set entry with index <index> to <data>
+	  db	REQUIRED
+	  pass	REQUIRED
+	  index	REQUIRED
+	  data  REQUIRED
+	/deleteEntry : delete entry with of <db> from index <index>
+	  db	REQUIRED
+	  pass	REQUIRED
+	  index	REQUIRED
+	Attributes can be one or more of the following arguments:
+	 In query :
+	  db	= <String:name> 	for create JSON database with name <db>.
+	  pass	= <String:pass> 	for set password <pass> of your JSON database <name>.
+	  data	= <JSONString:data>	for set data entry to <data>
+	  max	= <Number:max> 		for get database with <max> entries limits.
+	  index = <Number:index>	for give the index <index> of entry.
